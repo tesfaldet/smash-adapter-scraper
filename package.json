@@ -17,5 +17,12 @@
     "url": "https://github.com/tesfaldet/smash-adapter-scraper.git"
   },
   "author": "Matthew Tesfaldet <tesfaldet@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "amazon-product-api"  : "0.1.x",
+    "async"               : "0.9.x",
+    "fmt"                 : "0.5.x",
+    "iniparser"           : "1.0.x",
+    "nomnom"              : "1.8.x"
+  }
 }
