@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+var opts    = require('nomnom'),
+    utils   = require('../lib/utils');
+
+opts = opts.script('smash-adapter-scraper')
+  .option('region', {
+    abbr      : 'r',
+    required  : true,
+    help      : 'Amazon region to check [required]'
+  })
+  .option('once' {
+    abbr    : 'o',
+    flag    : true,
+    default : false,
+    help    : 'Check for stock update ONLY ONCE and exit [default: false]'
+  })
+  .option('debug', {
+    abbr : 'd',
+    flag : true,
+    help : "Print debugging info"
+  })
+  .option('version', {
+    abbr     : 'v',
+    flag     : true,
+    help     : 'Print version and exit',
+    callback : function() {
+      return "0.0.1";
+    }
+  })
+  .parse();
