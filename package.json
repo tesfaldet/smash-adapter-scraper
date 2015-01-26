@@ -1,7 +1,7 @@
 {
   "name": "smash-adapter-scraper",
   "version": "0.0.1",
-  "description": "A tool that will inform the user of stock-status of the Gamecube Adapter for Wii U via command line and/or text message.",
+  "description": "A tool that will inform the user of stock-status of the Gamecube Adapter for Wii U via command line and/or e-mail.",
   "homepage": "https://github.com/tesfaldet/smash-adapter-scraper",
   "main": "scraper.js",
   "bin": { "smash-adapter-scraper": "./bin/smash-adapter-scraper" },
@@ -23,6 +23,7 @@
     "async"               : "0.9.x",
     "fmt"                 : "0.5.x",
     "iniparser"           : "1.0.x",
+    "nodemailer"          : "1.3.x",
     "nomnom"              : "1.8.x"
   }
 }
